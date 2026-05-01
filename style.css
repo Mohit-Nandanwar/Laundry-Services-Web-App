@@ -1,0 +1,236 @@
+/* Reset */
+* { 
+  margin:0; 
+  padding:0; 
+  box-sizing:border-box; 
+}
+body { 
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+line-height:1.6;
+color:#333;  
+background:#fafafa; 
+  }
+
+/* Navbar */
+.navbar {
+  display:flex;
+   justify-content:space-between; 
+   align-items:center;
+  padding:15px 30px; 
+  background:#fff;
+   box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+.logo { font-weight:bold;
+   font-size:1.2rem;
+    color:#007bff;
+   }
+.nav-links { 
+  list-style:none;
+   display:flex; 
+  }
+.nav-links li { 
+  margin-left:20px;
+ }
+.nav-links a {
+  text-decoration:none; color:#333; 
+  font-weight:500;
+  transition:color 0.3s;
+}
+.nav-links a:hover {
+   color:#007bff; 
+  }
+.hamburger { 
+  display:none;
+   cursor:pointer;
+    font-size:1.5rem; 
+  }
+
+/* Hero */
+.hero {
+  display:flex;
+   justify-content:
+   space-between;
+    align-items:center;
+  padding:60px 40px;
+   background:#eef;
+}
+.hero-left { max-width:50%; }
+.hero-left h1 {
+   font-size:2.5rem;
+    margin-bottom:20px; 
+    color:#222; 
+  }
+.hero-left p {
+   margin-bottom:20px;
+    color:#555; 
+  }
+.hero-left button
+ {
+  padding:12px 25px;
+   background:#007bff; 
+   color:#fff;
+    border:none;
+     border-radius:5px;
+  cursor:pointer; 
+  font-size:1rem;
+   transition:background 0.3s;
+}
+.hero-left button:hover { 
+  background:#0056b3;
+  box-shadow: 0 0 9px black;
+ }
+.hero-right img {
+   max-width:100%;
+   border-radius:10px; 
+  }
+
+/* Overview */
+.overview {
+  display:flex; 
+  justify-content:space-around; 
+  padding:30px; background:#f9f9f9;
+  background-color: rgb(29, 140, 213);
+}
+.achievement {
+   font-weight:bold;
+    font-size:1.1rem;
+     color:#000000; }
+
+/* Booking */
+.booking {
+   display:flex;
+    padding:40px;
+     background:#fff;
+     }
+.booking-left, 
+.booking-right {
+   flex:1; margin:20px; 
+  }
+.service { 
+  margin-bottom:15px; 
+}
+.service span {
+   font-weight:500; 
+  }
+.service button {
+  margin-left:10px;
+   padding:6px 12px;
+    border:none; 
+    border-radius:4px;
+  cursor:pointer;
+   background:#007bff; 
+   color:#fff; 
+   transition:background 0.3s;
+}
+.service button:hover {
+   background:#0056b3; 
+  }
+#cart { 
+  list-style:none;
+   margin:10px 0; padding:0;
+   }
+#cart li {
+   margin-bottom:5px; 
+  }
+
+/* Quality */
+.quality {
+  display:flex; 
+  justify-content:space-around; 
+  padding:30px; 
+  background:#eef;
+}
+.quality-item {
+   font-weight:bold; 
+   color:#444; 
+  }
+
+/* Newsletter */
+.newsletter {
+  text-align:center; 
+  padding:40px; 
+  background:#007bff; 
+  color:#fff;
+}
+.newsletter h2 {
+   margin-bottom:20px;
+   }
+.newsletter input {
+  margin:10px;
+   padding:10px; 
+   border:none;
+    border-radius:5px;
+}
+.newsletter button {
+  padding:10px 20px;
+   background:#fff; 
+   color:#007bff;
+    border:none; 
+    border-radius:5px;
+  cursor:pointer; 
+  transition:background 0.3s;
+}
+.newsletter button:hover {
+   background:#f1f1f1; 
+  }
+
+/* Footer */
+footer {
+  display:flex;
+   justify-content:space-between; 
+   align-items:center;
+  padding:20px 30px;
+   background:#333;
+    color:#fff;
+}
+footer a {
+   color:#fff; 
+   margin-right:15px;
+    text-decoration:none; 
+    transition:color 0.3s; }
+footer a:hover {
+   color:#000000;
+   }
+
+/* Responsive */
+@media(max-width:834px) {
+  .hero {
+     flex-direction:column;
+      text-align:center;
+     }
+  .hero-left {
+     max-width:100%;
+      margin-bottom:20px;
+     }
+  .booking {
+     flex-direction:column; 
+    }
+}
+@media(max-width:390px) {
+  .nav-links { display:none;
+     flex-direction:column;
+      background:#fff;
+       padding:10px;
+       }
+  .hamburger {
+     display:block;
+     }
+  .booking { 
+    flex-direction:column;
+   }
+}
+
+
+.add-item:hover{
+box-shadow: 0 0 9px rgb(8, 101, 188);
+}
+.sub-button{
+  background-color: rgb(43, 168, 8);
+  border: 1px solid rgb(43, 168, 8);
+  border-radius: 4px;
+
+}
+.sub-button:hover{
+  box-shadow: 0 0 9px green
+  ;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundry Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🧺 Laundry</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="username">Hello, Mohit</div>
+    <div class="hamburger" id="hamburger">☰</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <h1>Revitalize Your Clothes with Expert Laundry Services!</h1>
+      <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!</p>
+      <button onclick="document.getElementById('booking').scrollIntoView()">Book a Service Today</button>
+    </div>
+    <div class="hero-right">
+      <img src="https://www.bing.com/th/id/OIP.IZHDEcE2BeHYENHNvxaPOQHaH5?w=193&h=206&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Laundry Service">
+    </div>
+  </section>
+
+  <!-- Service Overview -->
+  <section class="overview">
+    <div class="achievement">15+ Laundry Services</div>
+    <div class="achievement">240+ Happy Customers</div>
+    <div class="achievement">2+ Years Experience</div>
+  </section>
+
+  <!-- Booking Services -->
+  <section class="booking" id="booking">
+    <div class="booking-left">
+      <h2>Our Services</h2>
+      <div class="service">
+        <span>Dry Cleaning - ₹200</span>
+        <button class="add-item" onclick="addItem('Dry Cleaning',200)">Add Item</button>
+        <button class="add-item" onclick="removeItem('Dry Cleaning')">Remove</button>
+      </div>
+      <div class="service">
+        <span>Wash & Fold - ₹100</span>
+        <button class="add-item"  onclick="addItem('Wash & Fold',100)">Add Item</button>
+        <button  class="add-item" onclick="removeItem('Wash & Fold')">Remove</button>
+      </div>
+      <div class="service">
+        <span>Ironing - ₹30</span>
+        <button  class="add-item" onclick="addItem('Ironing',30)">Add Item</button>
+        <button  class="add-item" onclick="removeItem('Ironing')">Remove</button>
+      </div>
+      <div class="service">
+        <span>Stain Removal - ₹250</span>
+        <button  class="add-item" onclick="addItem('Stain Removal',250)">Add Item</button>
+        <button  class="add-item" onclick="removeItem('Stain Removal')">Remove</button>
+      </div>
+      <p>Add items to the cart and book now!</p>
+    </div>
+
+    <div class="booking-right">
+      <h2>Added Items</h2>
+      <ul id="cart"></ul>
+      <p>Total Amount: ₹<span id="total">0</span></p>
+
+      <h3>Book Now</h3>
+      <form id="bookingForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email ID" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <button class="sub-button" type="submit">Book Now</button>
+      </form>
+      <p id="confirmation"></p>
+    </div>
+  </section>
+
+  <!-- Quality Description -->
+  <section class="quality">
+    <div class="quality-item">Premium Services</div>
+    <div class="quality-item">Quick Support</div>
+    <div class="quality-item">Timely Delivery</div>
+    <div class="quality-item">Affordable Prices</div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Subscribe to our newsletter</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">Press</a>
+      <a href="#">iOS App</a>
+      <a href="#">Android App</a>
+    </div>
+    <div class="footer-right">
+      <span>📘</span>
+      <span>🐦</span>
+      <span>📸</span>
+    </div>
+    <p>&copy; 2026 Laundry Service. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
